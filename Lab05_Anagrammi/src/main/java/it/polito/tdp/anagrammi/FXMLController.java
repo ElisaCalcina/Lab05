@@ -41,7 +41,7 @@ public class FXMLController {
     	txtAnagrammiCorretti.clear();
     	txtAnagrammiErrati.clear();
     	
-    	String anagramma= txtInserisci.getText();  	
+    	String anagramma= txtInserisci.getText(); 	
     	this.model.anagrammi(anagramma);
     	List<Parola> parole= this.model.getSoluzione();
     	

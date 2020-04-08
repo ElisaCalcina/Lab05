@@ -18,15 +18,20 @@ public class Model {
 		for(int i=0; i<parola.length(); i++) {
 			disponibili.add(parola.charAt(i));
 		}
-		cerca(" ", 0, disponibili);
+		cerca("", 0, disponibili);
 		
 		return soluzione;
 	}
 	
 	private void cerca(String parziale, int livello, List<Character> disponibili) {
-		if(disponibili.size()==0 && isCorrect(parziale)) {
+		if(disponibili.size()==0 ){
+			if(isCorrect(parziale)) {
 				Parola p = new Parola(parziale, true);
 				soluzione.add(p);
+		}else {
+			Parola p= new Parola(parziale, false);
+			soluzione.add(p);
+			}
 		}
 		
 		for(Character ch: disponibili) {
