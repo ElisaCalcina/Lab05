@@ -13,6 +13,8 @@ public class Model {
 		soluzione= new ArrayList<Parola>();
 		List<Character> disponibili = new ArrayList<Character>();
 		
+		parola.toLowerCase();
+		
 		for(int i=0; i<parola.length(); i++) {
 			disponibili.add(parola.charAt(i));
 		}

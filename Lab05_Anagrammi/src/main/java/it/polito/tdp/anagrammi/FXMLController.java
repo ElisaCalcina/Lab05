@@ -42,7 +42,7 @@ public class FXMLController {
     	txtAnagrammiErrati.clear();
     	
     	String anagramma= txtInserisci.getText();  	
-    	model.anagrammi(anagramma);
+    	this.model.anagrammi(anagramma);
     	List<Parola> parole= this.model.getSoluzione();
     	
     	for(Parola p: parole) {
@@ -52,6 +52,7 @@ public class FXMLController {
     			txtAnagrammiErrati.appendText(p.toString()+"\n");
     		}
     	}
+    	
     	
 
     }
