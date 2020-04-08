@@ -14,7 +14,7 @@ public class AnagrammaDAO {
 
 	public boolean isCorrect(String anagramma) {
 		
-		final String sql= "select nome from parola where nome = ? ";
+		String sql= "SELECT nome FROM parola WHERE nome = ?";
 		
 		List<Parola> parole= new LinkedList<Parola>();
 		

@@ -42,7 +42,7 @@ public class Model {
 		return dao.isCorrect(anagramma);
 	}
 	
-	public List<Parola> getSoluzione(String anagramma){
+	public List<Parola> getSoluzione(){
 		return this.soluzione;
 	}
 	
